@@ -1,17 +1,24 @@
 package org.example.springbootvjezba2.domain;
 
-import lombok.*;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
+@Entity
 public class Hardware {
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String name;
-    private Type type;
+    @ManyToOne
+    @JoinColumn(name = "categoryId")
+    private HardwareType hardwareType;
     private String code;
     private long stock;
     private BigDecimal price;

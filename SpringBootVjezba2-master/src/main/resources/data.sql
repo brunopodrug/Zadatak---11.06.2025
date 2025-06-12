@@ -1,19 +1,19 @@
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('CPU', 'Central processing unit');
 
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('GPU', 'Graphics processing unit');
 
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('MBO', 'Motherboard');
 
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('RAM', 'Random Access Memory');
 
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('STORAGE', 'Storage for data');
 
-INSERT INTO Type(name, description)
+INSERT INTO HardwareType(name, description)
 VALUES('OTHER', 'Other');
 
 INSERT INTO Hardware(name, code, price, stock, typeId)
