@@ -1,9 +1,12 @@
 package org.example.springbootvjezba2.repository;
 
+import lombok.AllArgsConstructor;
 import org.example.springbootvjezba2.domain.Hardware;
 import org.example.springbootvjezba2.domain.Type;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,6 +14,9 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
+@Primary
+@AllArgsConstructor
 public class JdbcHardwareRepository implements HardwareRepository {
     private JdbcTemplate jdbcTemplate;
 
@@ -47,7 +53,7 @@ public class JdbcHardwareRepository implements HardwareRepository {
         {
             if (hardwareByIdExists(id)) {
                 final String SQL =
-                        "UPDATE HARDWARE SET name = ?, code = ?, price = ?, stock = ?, categoryId = ? WHERE ID = ?";
+                        "UPDATE HARDWARE SET name = ?, code = ?, price = ?, stock = ?, typeId = ? WHERE ID = ?";
                 jdbcTemplate.update(connection -> {
                     PreparedStatement ps = connection.prepareStatement(SQL);
                     ps.setString(1, hardwareToUpdate.getName());
@@ -83,12 +89,12 @@ public class JdbcHardwareRepository implements HardwareRepository {
 
             Hardware newHardware = new Hardware();
             newHardware.setId(rs.getInt("ID"));
-            newHardware.setName(rs.getString("CODE"));
-            newHardware.setCode(rs.getString("DESCRIPTION"));
+            newHardware.setName(rs.getString("NAME"));
+            newHardware.setCode(rs.getString("CODE"));
             newHardware.setPrice(rs.getBigDecimal("PRICE"));
             newHardware.setStock(rs.getInt("STOCK"));
 
-            Integer categoryId = rs.getInt("CATEGORYID");
+            Integer categoryId = rs.getInt("TYPEID");
 
             switch (categoryId) {
                 case 1 -> newHardware.setType(Type.CPU);

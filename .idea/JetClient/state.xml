@@ -33,7 +33,7 @@
               <option name="id" value="da5a7718-199e-43bb-970b-d2cc44ec0e99" />
               <option name="method" value="PUT" />
               <option name="name" value="PUT" />
-              <option name="url" value="http://localhost:9090/hardware-list/hardware/1" />
+              <option name="url" value="http://localhost:9090/hardware-list/hardware/2" />
             </requestState>
             <requestState>
               <option name="id" value="236b95f3-5f9f-480a-aa30-79bda5bb9848" />
