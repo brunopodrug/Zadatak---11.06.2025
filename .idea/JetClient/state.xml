@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;RTX 9999&quot;,&#10;  &quot;price&quot;: 99.99&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="12a04a99-1551-4d3d-ad53-ba7211e2e753" />
+              <option name="method" value="POST" />
+              <option name="name" value="POST" />
+              <option name="url" value="http://localhost:9090/hardware-list/new" />
+            </requestState>
+            <requestState>
+              <option name="id" value="754bb32b-0ad2-404c-b22b-06765fd3ccbd" />
+              <option name="method" value="GET" />
+              <option name="name" value="GET" />
+              <option name="url" value="http://localhost:9090/hardware-list" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;price&quot;: 1999.0&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="da5a7718-199e-43bb-970b-d2cc44ec0e99" />
+              <option name="method" value="PUT" />
+              <option name="name" value="PUT" />
+              <option name="url" value="http://localhost:9090/hardware-list/hardware/1" />
+            </requestState>
+            <requestState>
+              <option name="id" value="236b95f3-5f9f-480a-aa30-79bda5bb9848" />
+              <option name="method" value="DELETE" />
+              <option name="name" value="DELETE" />
+              <option name="url" value="http://localhost:9090/hardware-list/hardware/1" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="a37f3a03-e2fa-4972-b7a9-768a8032c41d" />
+    <option name="version" value="3" />
+  </component>
+</project>
