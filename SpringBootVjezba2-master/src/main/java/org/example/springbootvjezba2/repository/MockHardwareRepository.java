@@ -43,11 +43,11 @@ public class MockHardwareRepository implements HardwareRepository {
     }
 
     @Override
-    public Integer saveNewHardware(Hardware hardware) {
+    public Hardware saveNewHardware(Hardware hardware) {
         Integer generatedId = hardwareList.size() + 1;
         hardware.setId(generatedId);
         hardwareList.add(hardware);
-        return generatedId;
+        return hardware;
     }
 
     @Override

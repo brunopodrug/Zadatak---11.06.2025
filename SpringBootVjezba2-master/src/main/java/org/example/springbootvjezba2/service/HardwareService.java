@@ -12,7 +12,7 @@ public interface HardwareService {
 
     HardwareDTO findByCode(String code);
 
-    Integer saveNewHardware(HardwareDTO hardwareDTO);
+    HardwareDTO saveNewHardware(HardwareDTO hardwareDTO);
 
     boolean hardwareByIdExists(Integer id);
 

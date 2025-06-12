@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
 public class Hardware {
     private Integer id;

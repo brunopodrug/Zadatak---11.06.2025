@@ -7,15 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PrimjerPUT_DELETE" />
+        <module name="Primjer3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="PrimjerPUT_DELETE" target="21" />
       <module name="SpringBootVjezba2" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Primjer3" options="-parameters" />
       <module name="PrimjerPUT_DELETE" options="-parameters" />
       <module name="SpringBootVjezba2" options="-parameters" />
     </option>

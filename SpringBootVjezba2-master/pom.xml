@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>hr.java.web</groupId>
-    <artifactId>PrimjerPUT_DELETE</artifactId>
+    <artifactId>Primjer3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>HelloWorld</name>
     <description>HelloWorld</description>

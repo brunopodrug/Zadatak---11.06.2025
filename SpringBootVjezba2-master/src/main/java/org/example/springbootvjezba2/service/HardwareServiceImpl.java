@@ -37,8 +37,8 @@ public class HardwareServiceImpl implements HardwareService{
     }
 
     @Override
-    public Integer saveNewHardware(HardwareDTO hardwareDTO) {
-        return hardwareRepository.saveNewHardware(convertHardwareDtoToHardware(hardwareDTO));
+    public HardwareDTO saveNewHardware(HardwareDTO hardware) {
+        return convertHardwareToHardwareDTO(hardwareRepository.saveNewHardware(convertHardwareDtoToHardware(hardware)));
     }
 
     @Override
