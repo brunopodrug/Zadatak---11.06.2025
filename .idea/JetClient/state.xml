@@ -8,14 +8,14 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;RTX Titanium new 6060&quot;,&#10;  &quot;price&quot;: 100&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;5050 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234561&quot;,&#10;  &quot;stock&quot;: 10,&#10;  &quot;price&quot;: 1599.0,&#10;  &quot;hardwareType&quot;: {&#10;    &quot;id&quot;: 2&#10;  }&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
               <option name="id" value="12a04a99-1551-4d3d-ad53-ba7211e2e753" />
               <option name="method" value="POST" />
-              <option name="name" value="POST" />
-              <option name="url" value="http://localhost:9090/hardware-list/new" />
+              <option name="name" value="New Hardware" />
+              <option name="url" value="http://localhost:9090/hardware-list" />
             </requestState>
             <requestState>
               <option name="id" value="754bb32b-0ad2-404c-b22b-06765fd3ccbd" />
@@ -26,20 +26,26 @@
             <requestState>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;price&quot;: 1999.0&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234561&quot;,&#10;  &quot;stock&quot;: 10,&#10;  &quot;price&quot;: 1599.0,&#10;  &quot;hardwareType&quot;: {&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;GPU&quot;,&#10;    &quot;description&quot;: &quot;Graphics processing unit&quot;&#10;  }&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
               <option name="id" value="da5a7718-199e-43bb-970b-d2cc44ec0e99" />
               <option name="method" value="PUT" />
               <option name="name" value="PUT" />
-              <option name="url" value="http://localhost:9090/hardware-list/hardware/2" />
+              <option name="url" value="http://localhost:9090/hardware-list/5" />
             </requestState>
             <requestState>
               <option name="id" value="236b95f3-5f9f-480a-aa30-79bda5bb9848" />
               <option name="method" value="DELETE" />
-              <option name="name" value="DELETE" />
-              <option name="url" value="http://localhost:9090/hardware-list/hardware/1" />
+              <option name="name" value="Delete Hardware" />
+              <option name="url" value="http://localhost:9090/hardware-list/5" />
+            </requestState>
+            <requestState>
+              <option name="id" value="d8fb1e35-2e8b-4644-98e9-4ea69d623541" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:9090/hardware-list/2" />
             </requestState>
           </list>
         </option>

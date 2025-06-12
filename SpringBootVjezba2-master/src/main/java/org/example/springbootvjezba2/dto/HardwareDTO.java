@@ -21,11 +21,6 @@ public class HardwareDTO {
     private String code;
     private long stock;
     private BigDecimal price;
-    @Override
-    public String toString() {
-        return "HardwareDTO{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
+    private HardwareType hardwareType;
 }
+

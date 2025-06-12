@@ -10,7 +10,7 @@ public interface HardwareService {
 
     List<HardwareDTO> findAll();
 
-    HardwareDTO findHardwareByCode(Long hardwareId);
+    HardwareDTO findHardwareById(Long hardwareId);
 
     HardwareDTO saveNewHardware(HardwareDTO hardwareDTO);
 

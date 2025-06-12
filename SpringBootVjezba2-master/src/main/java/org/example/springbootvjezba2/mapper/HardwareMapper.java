@@ -9,21 +9,21 @@ public class HardwareMapper {
         return new HardwareDTO(
                 hardware.getId(),
                 hardware.getName(),
-                hardware.getHardwareType(),
                 hardware.getCode(),
                 hardware.getStock(),
-                hardware.getPrice()
-        );
+                hardware.getPrice(),
+                hardware.getHardwareType()
+                );
     }
 
     public static Hardware maptoHardware(HardwareDTO hardwareDTO) {
         return new Hardware(
                 hardwareDTO.getId(),
                 hardwareDTO.getName(),
-                hardwareDTO.getHardwareType(),
                 hardwareDTO.getCode(),
                 hardwareDTO.getStock(),
-                hardwareDTO.getPrice()
-        );
+                hardwareDTO.getPrice(),
+                hardwareDTO.getHardwareType()
+                );
     }
 }

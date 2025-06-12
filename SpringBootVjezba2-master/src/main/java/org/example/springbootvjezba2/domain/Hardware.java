@@ -16,10 +16,10 @@ public class Hardware {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @ManyToOne
-    @JoinColumn(name = "categoryId")
-    private HardwareType hardwareType;
     private String code;
     private long stock;
     private BigDecimal price;
+    @ManyToOne
+    @JoinColumn(name = "typeId")
+    private HardwareType hardwareType;
 }

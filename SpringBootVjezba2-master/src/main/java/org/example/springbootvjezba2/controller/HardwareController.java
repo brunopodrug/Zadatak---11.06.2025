@@ -22,9 +22,9 @@ public class HardwareController {
         return new ResponseEntity<>(hardware, HttpStatus.CREATED);
     }
 
-    @GetMapping("{id}")
-    public ResponseEntity<HardwareDTO> findHardwareById(@PathVariable("code") Long hardwareId) {
-        HardwareDTO hardware = hardwareService.findHardwareByCode(hardwareId);
+    @GetMapping("/{id}")
+    public ResponseEntity<HardwareDTO> findHardwareById(@PathVariable("id") Long hardwareId) {
+        HardwareDTO hardware = hardwareService.findHardwareById(hardwareId);
         return ResponseEntity.ok(hardware);
     }
 

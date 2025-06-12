@@ -24,7 +24,7 @@ public class HardwareServiceImpl implements HardwareService {
     }
 
     @Override
-    public HardwareDTO findHardwareByCode(Long hardwareId) {
+    public HardwareDTO findHardwareById(Long hardwareId) {
         Hardware hardware = springDataHardwareRepository.findById(hardwareId).orElseThrow();
         return HardwareMapper.maptoHardwareDto(hardware);
     }

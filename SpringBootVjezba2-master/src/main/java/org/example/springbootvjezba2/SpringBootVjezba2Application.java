@@ -9,5 +9,4 @@ public class SpringBootVjezba2Application {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootVjezba2Application.class, args);
     }
-
 }
