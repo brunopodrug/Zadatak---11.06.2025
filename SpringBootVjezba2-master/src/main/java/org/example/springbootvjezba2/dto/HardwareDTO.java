@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.springbootvjezba2.domain.HardwareType;
 
 import java.math.BigDecimal;
 
@@ -16,10 +15,10 @@ public class HardwareDTO {
     @NotBlank(message = "Hardware name cannot be blank")
     private Long id;
     private String name;
-    @DecimalMin(value = "0.0", message = "Hardware price must be positive")
     private String code;
     private long stock;
+    @DecimalMin(value = "0.0", message = "Hardware price must be positive")
     private BigDecimal price;
-    private HardwareType hardwareType;
+    private Long typeId;
 }
 

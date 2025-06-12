@@ -6,9 +6,19 @@
         <option name="requests">
           <list>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTg5NzQ0NywiZXhwIjoxNzUxOTAzNDQ3fQ.dTKFmHuDn7EacuqmoCD3TaKIvablp1Sj1SAQCgP656M" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;5050 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234561&quot;,&#10;  &quot;stock&quot;: 10,&#10;  &quot;price&quot;: 1599.0,&#10;  &quot;hardwareType&quot;: {&#10;    &quot;id&quot;: 2&#10;  }&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234562&quot;,&#10;  &quot;stock&quot;: 103,&#10;  &quot;price&quot;: 69.69,&#10;  &quot;typeId&quot;: 2&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
@@ -22,7 +32,7 @@
                 <authState>
                   <option name="bearer">
                     <nv>
-                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTI5OTM5MSwiZXhwIjoxNzUxMzA1MzkxfQ.lwzXXKPmKEopMyalmKonsbz7Xq2oQ95fYNAMAgS1YYc" />
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTg5NzQ0NywiZXhwIjoxNzUxOTAzNDQ3fQ.dTKFmHuDn7EacuqmoCD3TaKIvablp1Sj1SAQCgP656M" />
                     </nv>
                   </option>
                   <option name="type" value="BEARER" />
@@ -38,7 +48,7 @@
                 <authState>
                   <option name="bearer">
                     <nv>
-                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTIyMjQzNSwiZXhwIjoxNzUxMjI4NDM1fQ.eofsoWPfTrW68YXIXiKNvBlKX8Ku3F54_6aAbqvOz5s" />
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTg5MTQxMSwiZXhwIjoxNzUxODk3NDExfQ.czUTbw9kXfTjRrcQsQzJyicXM8s4lqpP0lxsmwBjlfI" />
                     </nv>
                   </option>
                   <option name="type" value="BEARER" />
@@ -46,26 +56,46 @@
               </option>
               <option name="body">
                 <bodyState>
-                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234561&quot;,&#10;  &quot;stock&quot;: 10,&#10;  &quot;price&quot;: 1599.0,&#10;  &quot;hardwareType&quot;: {&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;GPU&quot;,&#10;    &quot;description&quot;: &quot;Graphics processing unit&quot;&#10;  }&#10;}" />
+                  <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Test&quot;,&#10;  &quot;code&quot;: &quot;334499&quot;,&#10;  &quot;stock&quot;: 69,&#10;  &quot;price&quot;: 44.44,&#10;  &quot;typeId&quot;: 4&#10;}" />
                   <option name="type" value="JSON" />
                 </bodyState>
               </option>
               <option name="id" value="da5a7718-199e-43bb-970b-d2cc44ec0e99" />
-              <option name="method" value="GET" />
+              <option name="method" value="PUT" />
               <option name="name" value="Update hardware by Id" />
-              <option name="url" value="http://localhost:9090/hardware-list" />
+              <option name="url" value="http://localhost:9090/hardware-list/33" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTg4NTExMiwiZXhwIjoxNzUxODkxMTEyfQ.YdaEK4sGqSd-VFt-m7ocPhP5SZqffDvfZ0n4XCvVgJc" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="id" value="236b95f3-5f9f-480a-aa30-79bda5bb9848" />
               <option name="method" value="DELETE" />
               <option name="name" value="Delete Hardware" />
-              <option name="url" value="http://localhost:9090/hardware-list/5" />
+              <option name="url" value="http://localhost:9090/hardware-list/3" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTg4NTExMiwiZXhwIjoxNzUxODkxMTEyfQ.YdaEK4sGqSd-VFt-m7ocPhP5SZqffDvfZ0n4XCvVgJc" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="id" value="d8fb1e35-2e8b-4644-98e9-4ea69d623541" />
               <option name="method" value="GET" />
               <option name="name" value="Get hardware by code" />
-              <option name="url" value="http://localhost:9090/hardware-list/code/1" />
+              <option name="url" value="http://localhost:9090/hardware-list/code/1234562" />
             </requestState>
             <requestState>
               <option name="body">
@@ -80,6 +110,16 @@
               <option name="url" value="http://localhost:9090/auth/api/v1/login" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTU0OTQ1MCwiZXhwIjoxNzUxNTU1NDUwfQ.n9zMJXjOgGiBUJUQ6wE1xbbHC3SzNN4ThQK2GYFvyvo" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="body">
                 <bodyState>
                   <option name="raw" value="{&#10;  &quot;token&quot;: &quot;fd381f0f-a48c-4e6c-ac68-996ce6dd770e&quot;&#10;}" />
@@ -96,7 +136,7 @@
                 <authState>
                   <option name="bearer">
                     <nv>
-                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTIyNDYxNiwiZXhwIjoxNzUxMjMwNjE2fQ.gZaSagLBpEy7BimO5qdU3579eGRBtd_aZlxZDHICOeA" />
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTU1MDA0NSwiZXhwIjoxNzUxNTU2MDQ1fQ.URfClEVFA_6Rj8kLhGpr9WSPqeiZj49GMY7ZhAEcGNw" />
                     </nv>
                   </option>
                   <option name="type" value="BEARER" />
@@ -105,7 +145,7 @@
               <option name="id" value="151567f6-f198-4db9-a603-e260a1a14d11" />
               <option name="method" value="GET" />
               <option name="name" value="Ping request" />
-              <option name="url" value="http://localhost:9090/hardware-list/ping" />
+              <option name="url" value="http://localhost:9090/hardware-list/1" />
             </requestState>
           </list>
         </option>

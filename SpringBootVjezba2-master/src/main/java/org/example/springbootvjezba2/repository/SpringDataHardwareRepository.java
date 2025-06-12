@@ -4,7 +4,8 @@ import org.example.springbootvjezba2.domain.Hardware;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
-public interface SpringDataHardwareRepository extends JpaRepository<Hardware, Long>, JpaSpecificationExecutor<Hardware> {
+import java.util.Optional;
 
-    Hardware findHardwareByCode(String hardwareCode);
+public interface SpringDataHardwareRepository extends JpaRepository<Hardware, Long>, JpaSpecificationExecutor<Hardware> {
+    Optional<Hardware> findByCode(String code);
 }

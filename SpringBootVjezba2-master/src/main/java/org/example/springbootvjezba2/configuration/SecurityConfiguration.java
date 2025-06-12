@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.example.springbootvjezba2.filter.JwtAuthFilter;
 import org.example.springbootvjezba2.service.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -32,7 +33,13 @@ public class SecurityConfiguration {
                 .cors(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/auth/api/v1/login", "/auth/api/v1/refreshToken").permitAll()
-                        .requestMatchers("/api/v1/**", "/hardware-list**").authenticated())
+                        // Allow public access to GET requests
+                        .requestMatchers(HttpMethod.GET, "/hardware-list", "/hardware-list/**").permitAll()
+                        // Require authentication for POST, PUT, DELETE
+                        .requestMatchers(HttpMethod.POST, "/hardware-list").authenticated()
+                        .requestMatchers(HttpMethod.PUT, "/hardware-list/**").authenticated()
+                        .requestMatchers(HttpMethod.DELETE, "/hardware-list/**").authenticated()
+                )
                 .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
