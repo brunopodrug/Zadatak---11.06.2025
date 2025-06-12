@@ -18,4 +18,6 @@ public interface HardwareService {
 
     void deleteHardwareById(Long id);
 
+    HardwareDTO findHardwareByCode(String hardwareCode);
+
 }

@@ -5,6 +5,7 @@ import org.example.springbootvjezba2.dto.HardwareDTO;
 import org.example.springbootvjezba2.service.HardwareService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,9 +23,18 @@ public class HardwareController {
         return new ResponseEntity<>(hardware, HttpStatus.CREATED);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<HardwareDTO> findHardwareById(@PathVariable("id") Long hardwareId) {
         HardwareDTO hardware = hardwareService.findHardwareById(hardwareId);
+        return ResponseEntity.ok(hardware);
+    }
+
+    @GetMapping("/code/{code}")
+    public ResponseEntity<HardwareDTO> findHardwareByCode(@PathVariable("code") String hardwareCode) {
+        HardwareDTO hardware = hardwareService.findHardwareByCode(hardwareCode);
+        if (hardware == null ){
+            return ResponseEntity.ofNullable(hardware);
+        }
         return ResponseEntity.ok(hardware);
     }
 

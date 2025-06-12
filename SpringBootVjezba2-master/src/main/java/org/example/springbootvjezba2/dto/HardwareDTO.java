@@ -16,7 +16,6 @@ public class HardwareDTO {
     @NotBlank(message = "Hardware name cannot be blank")
     private Long id;
     private String name;
-    private HardwareType hardwareType;
     @DecimalMin(value = "0.0", message = "Hardware price must be positive")
     private String code;
     private long stock;

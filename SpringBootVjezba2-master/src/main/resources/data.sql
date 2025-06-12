@@ -30,3 +30,15 @@ VALUES('Samsung 980 PRO SSD 1TB', '1234564', 299.00, 200 , 5);
 
 INSERT INTO Hardware(name, code, price, stock, type_id)
 VALUES('Kingston FURY Beast DDR5 32GB', '1234565', 699.00, 1000 , 4);
+
+insert into USERS(id, username, password)
+values
+    (1, 'user', '$2a$12$h0HcS2QDb/7zPASbLa2GoOTSRP6CWK0oX7pCK.dPjkM6L5N4pNovi'), -- password = user
+    (2, 'admin', '$2a$12$INo0nbj40sQrTB7b28KJput/bNltGmFyCfRsUhvy73qcXo5/XdsTG'); -- password = admin
+
+insert into AUTHORITY (id, authority_name) values (1, 'ROLE_ADMIN'), (2, 'ROLE_USER');
+
+insert into USERS_AUTHORITY (user_id, authority_id)
+values
+    (1, 2),
+    (2, 1);

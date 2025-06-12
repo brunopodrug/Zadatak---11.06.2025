@@ -60,4 +60,11 @@ public class HardwareServiceImpl implements HardwareService {
 
         springDataHardwareRepository.deleteById(hardwareId);
     }
+
+    @Override
+    public HardwareDTO findHardwareByCode(String hardwareCode) {
+        Hardware hardware = springDataHardwareRepository.findHardwareByCode(hardwareCode);
+
+        return HardwareMapper.maptoHardwareDto(hardware);
+    }
 }

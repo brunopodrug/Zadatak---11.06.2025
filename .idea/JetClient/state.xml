@@ -18,12 +18,32 @@
               <option name="url" value="http://localhost:9090/hardware-list" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTI5OTM5MSwiZXhwIjoxNzUxMzA1MzkxfQ.lwzXXKPmKEopMyalmKonsbz7Xq2oQ95fYNAMAgS1YYc" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="id" value="754bb32b-0ad2-404c-b22b-06765fd3ccbd" />
               <option name="method" value="GET" />
-              <option name="name" value="GET" />
+              <option name="name" value="Get all hardware" />
               <option name="url" value="http://localhost:9090/hardware-list" />
             </requestState>
             <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTIyMjQzNSwiZXhwIjoxNzUxMjI4NDM1fQ.eofsoWPfTrW68YXIXiKNvBlKX8Ku3F54_6aAbqvOz5s" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
               <option name="body">
                 <bodyState>
                   <option name="raw" value="{&#10;  &quot;name&quot;: &quot;Asus TUF RTX 3080 Titanium&quot;,&#10;  &quot;code&quot;: &quot;1234561&quot;,&#10;  &quot;stock&quot;: 10,&#10;  &quot;price&quot;: 1599.0,&#10;  &quot;hardwareType&quot;: {&#10;    &quot;id&quot;: 2,&#10;    &quot;name&quot;: &quot;GPU&quot;,&#10;    &quot;description&quot;: &quot;Graphics processing unit&quot;&#10;  }&#10;}" />
@@ -31,9 +51,9 @@
                 </bodyState>
               </option>
               <option name="id" value="da5a7718-199e-43bb-970b-d2cc44ec0e99" />
-              <option name="method" value="PUT" />
-              <option name="name" value="PUT" />
-              <option name="url" value="http://localhost:9090/hardware-list/5" />
+              <option name="method" value="GET" />
+              <option name="name" value="Update hardware by Id" />
+              <option name="url" value="http://localhost:9090/hardware-list" />
             </requestState>
             <requestState>
               <option name="id" value="236b95f3-5f9f-480a-aa30-79bda5bb9848" />
@@ -44,8 +64,48 @@
             <requestState>
               <option name="id" value="d8fb1e35-2e8b-4644-98e9-4ea69d623541" />
               <option name="method" value="GET" />
-              <option name="name" value="Draft" />
-              <option name="url" value="http://localhost:9090/hardware-list/2" />
+              <option name="name" value="Get hardware by code" />
+              <option name="url" value="http://localhost:9090/hardware-list/code/1" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;username&quot;: &quot;admin&quot;,&#10;  &quot;password&quot;: &quot;admin&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="dd5331aa-77fc-4ea0-a604-106cf6da3525" />
+              <option name="method" value="POST" />
+              <option name="name" value="Login" />
+              <option name="url" value="http://localhost:9090/auth/api/v1/login" />
+            </requestState>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;token&quot;: &quot;fd381f0f-a48c-4e6c-ac68-996ce6dd770e&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="id" value="bf9bb623-26bf-4aaf-a10b-d024d9d801a8" />
+              <option name="method" value="POST" />
+              <option name="name" value="Create refresh token" />
+              <option name="url" value="http://localhost:9090/auth/api/v1/refreshToken" />
+            </requestState>
+            <requestState>
+              <option name="auth">
+                <authState>
+                  <option name="bearer">
+                    <nv>
+                      <option name="token" value="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc1MTIyNDYxNiwiZXhwIjoxNzUxMjMwNjE2fQ.gZaSagLBpEy7BimO5qdU3579eGRBtd_aZlxZDHICOeA" />
+                    </nv>
+                  </option>
+                  <option name="type" value="BEARER" />
+                </authState>
+              </option>
+              <option name="id" value="151567f6-f198-4db9-a603-e260a1a14d11" />
+              <option name="method" value="GET" />
+              <option name="name" value="Ping request" />
+              <option name="url" value="http://localhost:9090/hardware-list/ping" />
             </requestState>
           </list>
         </option>
